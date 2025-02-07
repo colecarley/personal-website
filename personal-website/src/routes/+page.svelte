@@ -128,7 +128,8 @@
                     <div id="contact" use:intersect class="py-24">
                         <ContactForm />
                     </div>
-                    <div class="flex justify-center py-24">
+                    <div class="flex justify-center py-24 items-center gap-12">
+                        <Socials mobile={innerWidth < MOBILE_WIDTH} />
                         <Ccbutton onclick={() => handleScroll("welcome")}
                             >Back to top!</Ccbutton
                         >
