@@ -60,7 +60,7 @@
                     >
                         <div>
                             <Cch3>Welcome! You can call me...</Cch3>
-                            <Cch1>Cole Carley</Cch1>
+                            <Cch1>COLE CARLEY!</Cch1>
                             <div class="my-2">
                                 <Cch2
                                     >Turning ideas into code and code into
@@ -86,7 +86,7 @@
                         <img
                             src="me.jpeg"
                             alt="Cole Carley"
-                            class="rounded-3xl object-scale-down h-96"
+                            class="rounded-3xl object-scale-down h-96 border-2 border-yellow"
                         />
                     </div>
                     <div id="about" use:intersect class="py-24">
@@ -102,8 +102,13 @@
                     <div id="projects" use:intersect class="py-24">
                         <Projects />
                     </div>
-                    <div id="contact" use:intersect class="py-24 mb-96">
+                    <div id="contact" use:intersect class="py-24">
                         <ContactForm />
+                    </div>
+                    <div class="flex justify-center py-24">
+                        <Ccbutton onclick={() => handleScroll("welcome")}
+                            >Back to top!</Ccbutton
+                        >
                     </div>
                 </div>
 

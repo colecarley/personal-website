@@ -1,5 +1,4 @@
 <script lang="ts">
-    import Cch2 from "./primitives/cch2.svelte";
     import Cch3 from "./primitives/cch3.svelte";
     import Cch4 from "./primitives/cch4.svelte";
     import Ccheader from "./primitives/ccheader.svelte";
@@ -52,7 +51,7 @@
 
 <div class="flex flex-col gap-12">
     {#each Object.keys(skills) as category}
-        <div class="flex flex-col gap-2">
+        <div class="flex flex-col gap-4">
             <Cch3>{category}</Cch3>
             {#each Object.keys(skills[category]) as subcategory}
                 <Cch4>{subcategory}</Cch4>

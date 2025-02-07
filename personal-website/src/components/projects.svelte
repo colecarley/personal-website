@@ -1,12 +1,11 @@
 <script lang="ts">
-    import Cch2 from "./primitives/cch2.svelte";
     import { formatDate } from "$lib/format-date";
-    import Cch3 from "./primitives/cch3.svelte";
-    import Cclist from "./primitives/cclist.svelte";
-    import Ccpill from "./primitives/ccpill.svelte";
     import Cca from "./primitives/cca.svelte";
+    import Cch3 from "./primitives/cch3.svelte";
     import Ccheader from "./primitives/ccheader.svelte";
+    import Cclist from "./primitives/cclist.svelte";
     import Ccp from "./primitives/ccp.svelte";
+    import Ccpill from "./primitives/ccpill.svelte";
 
     type Project = {
         title: string;
@@ -23,7 +22,7 @@
             title: "The Bird Programming Langauge",
             startDate: "2024-08-01",
             endDate: "Present",
-            link: "https://github.com/The-Bird-Programming-Langauge/bird-lang",
+            link: "https://bird-lang.org",
             description:
                 "A statically-type programming language that compiles to WbeAssembly. The Bird progarmming language is designed for web development and aims to provide a fast and safe alternative to JavaScript.",
             bullets: [
