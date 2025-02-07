@@ -1,4 +1,4 @@
-import { activeSection, type Section } from "./active-element";
+import { type Section } from "./active-element";
 
 export function handleScroll(to: Section) {
     const welcome = document.getElementById(to);

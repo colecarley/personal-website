@@ -55,7 +55,7 @@
             <Cch3>{category}</Cch3>
             {#each Object.keys(skills[category]) as subcategory}
                 <Cch4>{subcategory}</Cch4>
-                <div class="flex flex-row gap-2">
+                <div class="flex flex-row gap-2 flex-wrap">
                     {#each skills[category][subcategory] as skill}
                         <Ccpill>{skill}</Ccpill>
                     {/each}

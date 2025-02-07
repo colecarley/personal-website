@@ -1,6 +1,10 @@
 <script lang="ts">
     import { handleScroll } from "$lib";
-    import { activeSection, isSection } from "$lib/active-element";
+    import {
+        activeSection,
+        isSection,
+        type Section,
+    } from "$lib/active-element";
     import { onMount } from "svelte";
     import AboutMe from "../components/about-me.svelte";
     import ContactForm from "../components/contact-form.svelte";
@@ -44,51 +48,70 @@
             },
         };
     }
+
+    let innerWidth = 0;
+    const MOBILE_WIDTH = 768;
 </script>
 
+<svelte:window bind:innerWidth />
+
 <div class="h-full bg-dark w-full">
-    <Nav></Nav>
-    <Socials />
+    {#if innerWidth > MOBILE_WIDTH}
+        <Nav></Nav>
+        <Socials />
+    {/if}
     <Center>
         <Squeeze>
-            <div class="p-24">
+            <div class="w-full md:p-6 lg:p-24">
                 <div class="flex flex-col gap-96">
-                    <div
-                        id="welcome"
-                        use:intersect
-                        class="py-24 flex gap-12 justify-between"
-                    >
-                        <div>
-                            <Cch3>Welcome! You can call me...</Cch3>
-                            <Cch1>COLE CARLEY!</Cch1>
-                            <div class="my-2">
-                                <Cch2
-                                    >Turning ideas into code and code into
-                                    performance</Cch2
-                                >
-                            </div>
-                            <Ccp>
-                                As a computer scientist, I create programming
-                                languages, optimize compilers, and develop
-                                robust software solutions. My work bridges
-                                low-level performance with high-level usability.
-                                My goal is to change the future of web-based
-                                computing!
-                            </Ccp>
+                    <div id="welcome" use:intersect class="py-24">
+                        <div class=" text-wrap flex gap-12">
+                            <div>
+                                <Cch3>Welcome! You can call me...</Cch3>
+                                <Cch1>COLE CARLEY!</Cch1>
+                                {#if innerWidth <= MOBILE_WIDTH}
+                                    <Center>
+                                        <div class="my-6">
+                                            <img
+                                                src="me.jpeg"
+                                                alt="Cole Carley"
+                                                class="rounded-3xl object-scale-down h-64"
+                                            />
+                                        </div>
+                                    </Center>
+                                {/if}
+                                <div class="my-2">
+                                    <Cch2
+                                        >Turning ideas into code and code into
+                                        performance</Cch2
+                                    >
+                                </div>
+                                <Ccp>
+                                    As a computer scientist, I create
+                                    programming languages, optimize compilers,
+                                    and develop robust software solutions. My
+                                    work bridges low-level performance with
+                                    high-level usability. My goal is to change
+                                    the future of web-based computing!
+                                </Ccp>
 
-                            <div class="py-6">
-                                <Ccbutton
-                                    onclick={() => handleScroll("contact")}
-                                    >Contact Me!</Ccbutton
-                                >
+                                <div class="py-6">
+                                    <Ccbutton
+                                        onclick={() => handleScroll("contact")}
+                                        >Contact Me!</Ccbutton
+                                    >
+                                </div>
                             </div>
+                            {#if innerWidth > MOBILE_WIDTH}
+                                <img
+                                    src="me.jpeg"
+                                    alt="Cole Carley"
+                                    class="rounded-3xl object-scale-down h-64"
+                                />
+                            {/if}
                         </div>
-                        <img
-                            src="me.jpeg"
-                            alt="Cole Carley"
-                            class="rounded-3xl object-scale-down h-96 border-2 border-yellow"
-                        />
                     </div>
+
                     <div id="about" use:intersect class="py-24">
                         <AboutMe />
                     </div>
