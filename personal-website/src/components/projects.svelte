@@ -19,12 +19,12 @@
 
     const projects: Project[] = [
         {
-            title: "The Bird Programming Langauge",
+            title: "The Bird Programming language",
             startDate: "2024-08-01",
             endDate: "Present",
             link: "https://bird-lang.org",
             description:
-                "A statically-type programming language that compiles to WbeAssembly. The Bird progarmming language is designed for web development and aims to provide a fast and safe alternative to JavaScript.",
+                "A statically-type programming language that compiles to WbeAssembly. The Bird programming language is designed for web development and aims to provide a fast and safe alternative to JavaScript.",
             bullets: [
                 "Lead a team of 4 in the implementation of the Bird programming language",
                 "Focusing on JavaScript interoperability, this language aims to change web-based computing.",
@@ -48,7 +48,7 @@
             endDate: "2024-12-01",
             link: "https://github.com/colecarley/ROSlang",
             description:
-                "A domain-specific language for specifying robot behaviors. This interpreted langauge uses python-like syntax and allows the developer to parameterize tree nodes in a similar way to web components.",
+                "A domain-specific language for specifying robot behaviors. This interpreted language uses python-like syntax and allows the developer to parameterize tree nodes in a similar way to web components.",
             bullets: [
                 "Designed and implemented an interpreted programming language to specify dynamic hierarchical task trees, enabling developers to describe and parameterize tasks efficiently",
                 "Collaborated with the University’s Robotics lab to design a familiar language that provides a flexible and high-level abstraction",
