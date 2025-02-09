@@ -24,7 +24,7 @@
             endDate: "Present",
             link: "https://bird-lang.org",
             description:
-                "A statically-type programming language that compiles to WbeAssembly. The Bird programming Language is designed for web development and aims to provide a fast and safe alternative to JavaScript.",
+                "A statically-typed programming language that compiles to WebAssembly. The Bird programming Language is designed for web development and aims to provide a fast and safe alternative to JavaScript.",
             bullets: [
                 "Led a team of 4 in the implementation of the Bird programming Language",
                 "Focusing on JavaScript interoperability, this language aims to change web-based computing.",
