@@ -2,12 +2,10 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-@font-face { font-family: Roboto; src: url('Roboto-Medium.ttf'); } 
-
 
 html * 
 {
-    font-family: Roboto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 body {

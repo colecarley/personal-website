@@ -1,1 +1,1 @@
-<h1 class="text-6xl lg:text-8xl text-yellow"><slot></slot></h1>
+<h1 class="text-6xl lg:text-8xl text-yellow font-mono"><slot></slot></h1>

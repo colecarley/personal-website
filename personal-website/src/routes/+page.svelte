@@ -1,10 +1,6 @@
 <script lang="ts">
     import { handleScroll } from "$lib";
-    import {
-        activeSection,
-        isSection,
-        type Section,
-    } from "$lib/active-element";
+    import { activeSection, isSection } from "$lib/active-element";
     import { onMount } from "svelte";
     import AboutMe from "../components/about-me.svelte";
     import ContactForm from "../components/contact-form.svelte";
