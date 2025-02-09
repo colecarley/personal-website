@@ -58,7 +58,7 @@
     {/if}
     <Center>
         <Squeeze>
-            <div class="w-full md:p-6 lg:p-24">
+            <div class="w-full p-6">
                 <div class="flex flex-col gap-96">
                     <div id="welcome" use:intersect class="py-24">
                         <div class=" text-wrap flex gap-12">
@@ -121,10 +121,10 @@
                     <div id="projects" use:intersect class="py-24">
                         <Projects />
                     </div>
-                    <div id="contact" use:intersect class="py-24">
+                    <div id="contact" use:intersect class="pt-24">
                         <ContactForm />
                     </div>
-                    <div class="flex justify-center py-24 items-center gap-12">
+                    <div class="flex justify-center pb-24 items-center gap-12">
                         <Socials mobile={innerWidth < MOBILE_WIDTH} />
                         <Ccbutton onclick={() => handleScroll("welcome")}
                             >Back to top!</Ccbutton
