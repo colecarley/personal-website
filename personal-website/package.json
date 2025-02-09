@@ -24,6 +24,7 @@
 	},
 	"dependencies": {
 		"@sveltejs/adapter-vercel": "^5.6.1",
+		"dotenv": "^16.4.7",
 		"gif-frames": "^1.0.1",
 		"resend": "^4.1.2",
 		"vercel": "^41.0.2"
