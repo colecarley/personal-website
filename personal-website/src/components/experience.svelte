@@ -48,7 +48,7 @@
             company: "Alcomy",
             location: "Orem, Utah",
             startDate: "2023-05-01",
-            endDate: "2025-08-01",
+            endDate: "2023-08-01",
             description:
                 "As an intern, I worked on a variety of projects, from frontend development to backend services. In this role, I learned how to work in a professional environment and collaborate with a team of developers.",
             bullets: [

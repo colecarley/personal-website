@@ -68,7 +68,7 @@
             endDate: "2024-03-01",
             link: "https://github.com/colecarley/firewall_c",
             description:
-                "This is a small project that I did to learn more about network security. It is a simple firewall that can block ICMP packets. It is implemented as a dynamically loadable kernel module.",
+                "This is a small project that I did to learn more about network security. It is a simple firewall that can block ICMP packets.",
             bullets: [
                 "Implemented a simple firewall that can block ICMP packets",
                 "Designed the firewall as a dynamically loadable kernel module",
